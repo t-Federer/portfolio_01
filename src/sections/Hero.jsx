@@ -6,6 +6,8 @@ import CanvasLoader from "../components/CanvasLoader"
 // import { Leva, useControls } from "leva"
 import { useMediaQuery } from "react-responsive"
 import { calculateSizes } from "../constants"
+import HeroCamera from "../components/HeroCamera"
+import Button from "../components/Button"
 
 const Hero = () => {
         // const controlsLeva = useControls("HackerRoom", {
@@ -62,16 +64,23 @@ const Hero = () => {
                                 <Canvas className="w-full h-full">
                                         <Suspense fallback={<CanvasLoader />}>
                                                 <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
-                                                <HackerRoom 
-                                                        position={sizes.deskPosition}  
-                                                        rotation={[0, -Math.PI, 0]} 
-                                                        scale={sizes.deskScale} 
-                                                />
-
+                                                <HeroCamera>        
+                                                        <HackerRoom isMobile={isMobile}
+                                                                position={sizes.deskPosition}  
+                                                                rotation={[0, -Math.PI, 0]} 
+                                                                scale={sizes.deskScale} 
+                                                        />
+                                                </HeroCamera>
                                                 <ambientLight intensity={1} />
-                                                <directionalLight position={[10, 10, 10]} intensity={1} /> 
+                                                <directionalLight position={[10, 10, 10]} intensity={0.5} /> 
                                         </Suspense>
                                 </Canvas>
+                        </div>
+
+                        <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                                <a href="#contact" className="w-fit">
+                                        <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+                                </a>
                         </div>
                 </section>
         )
