@@ -182,7 +182,7 @@ body {
 @utility hero_tag {
   text-align: center;
   font-size: 1.875rem;
-  line-height: 1;
+  line-height: 1.2; /* Changed from 1 to 1.2 */
   font-family: var(--font-generalsans);
   font-weight: 900;
   

@@ -1,74 +1,44 @@
 import { Canvas } from "@react-three/fiber" 
 import { PerspectiveCamera } from "@react-three/drei"
-import HackerRoom from "../components/HackerRoom"
+import Computers from "../components/Computers"
 import { Suspense } from "react"
 import CanvasLoader from "../components/CanvasLoader"
 // import { Leva, useControls } from "leva"
 import { useMediaQuery } from "react-responsive"
-import { calculateSizes } from "../constants"
 import HeroCamera from "../components/HeroCamera"
 import Button from "../components/Button"
 
 const Hero = () => {
-        // const controlsLeva = useControls("HackerRoom", {
-        //         positionX: {
-        //                 value: 2.5,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         positionY: {
-        //                 value: 2.5,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         positionZ: {
-        //                 value: 2.5,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         rotationX: {
-        //                 value: 0,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         rotationY: {
-        //                 value: 0,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         rotationZ: {
-        //                 value: 0,
-        //                 min: -10,
-        //                 max: 10
-        //         },
-        //         scale: {
-        //                 value: 1,
-        //                 min: 0.1,
-        //                 max: 10 
-        //         }
-        // })
-        const isSmall = useMediaQuery({minWidth: 440})
+        const isSmall = useMediaQuery({maxWidth: 440})
         const isMobile = useMediaQuery({maxWidth: 768});
-        const istTablet = useMediaQuery({minWidth: 768, maxWidth: 1024});
-
-        const sizes = calculateSizes(isSmall, isMobile, istTablet)
+        const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1024});
 
         return (
-                <section className="min-h-screen w-full flex flex-col relative">
+                <section id="home" className="min-h-screen w-full flex flex-col relative">
                         <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
                                 <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">Hi, I am Federico</p>
-                                <p className="hero_tag text-gray_gradient">Designing UX, Building Frontends</p>
+                                <p className="hero_tag text-gray_gradient">Building UX & Frontends</p>
                         </div>
                         <div className="w-full h-full absolute inset-0">
                                 {/* <Leva /> */}
                                 <Canvas className="w-full h-full">
                                         <Suspense fallback={<CanvasLoader />}>
                                                 <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
-                                                <HeroCamera>        
-                                                        <HackerRoom isMobile={isMobile}
-                                                                position={sizes.deskPosition}  
-                                                                rotation={[0, -Math.PI, 0]} 
-                                                                scale={sizes.deskScale} 
+                                                <HeroCamera isMobile={isMobile}>        
+                                                        <Computers 
+                                                                position={
+                                                                        isSmall ? [0, -1.2, 0] :
+                                                                        isMobile ? [0.5, -1.4, 0] :
+                                                                        isTablet ? [0.7, -1.9, 0] :
+                                                                        [0.95, -2.1, 0]
+                                                                }  
+                                                                rotation={[0.1, -Math.PI / 2, 0]} 
+                                                                scale={
+                                                                        isSmall ? 0.09 :
+                                                                        isMobile ? 0.1 :
+                                                                        isTablet ? 0.11 :
+                                                                        0.14
+                                                                } 
                                                         />
                                                 </HeroCamera>
                                                 <ambientLight intensity={1} />
