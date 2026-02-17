@@ -42,7 +42,7 @@ const Hero = () => {
                                                         />
                                                 </HeroCamera>
                                                 <ambientLight intensity={1} />
-                                                <directionalLight position={[10, 10, 10]} intensity={0.5} /> 
+                                                <directionalLight position={[10, 10, 10]} intensity={1.5} /> 
                                         </Suspense>
                                 </Canvas>
                         </div>
