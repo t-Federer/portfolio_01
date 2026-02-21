@@ -16,6 +16,22 @@ export const navLinks = [
   },
 ];
 
+export const techStack = [
+  { name: "React", path: "src/assets/react.svg", label: "Git" },
+  { name: "React", path: "src/assets/react.svg", label: "JavaScript" },
+  { name: "React", path: "src/assets/tailwindcss.png", label: "Tailwind" },
+  { name: "React", path: "src/assets/react.svg", label: "React" },
+  { name: "React", path: "src/assets/react.svg", label: "Three.js" },
+  { name: "React", path: "src/assets/react.svg", label: "Python" },
+  { name: "React", path: "src/assets/react.svg", label: "SQL" },
+  { name: "React", path: "src/assets/figma.svg", label: "Figma" },
+  { name: "React", path: "src/assets/react.svg", label: "Illustrator" },
+  { name: "React", path: "src/assets/react.svg", label: "PhotoShop" },
+  { name: "React", path: "src/assets/react.svg", label: "Lightroom" },
+  { name: "React", path: "src/assets/react.svg", label: "Unreal" },
+  { name: "React", path: "src/assets/react.svg", label: "Blender" },
+];
+
 export const myProjects = [
   {
     title: "Macbook Pro - Landing page (clone)",
