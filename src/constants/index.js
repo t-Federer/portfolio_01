@@ -44,7 +44,7 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
     spotlight: 'src/assets/spotlight1.png',
     tags: [
@@ -81,7 +81,7 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      // boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
     spotlight: 'src/assets/spotlight2.png',
     tags: [
@@ -120,7 +120,7 @@ export const myProjects = [
       background:
         'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
       border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      // boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
     spotlight: 'src/assets/spotlight3.png',
     tags: [
@@ -157,7 +157,7 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      // boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
     spotlight: 'src/assets/spotlight4.png',
     tags: [
@@ -194,7 +194,7 @@ export const myProjects = [
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
+      // boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
     spotlight: 'src/assets/spotlight5.png',
     tags: [
