@@ -135,12 +135,12 @@ const About = () => {
                     ))}
                   </div>
                   <a
-                    className="flex items-center gap-1.5 cursor-pointer text-white-600 underline"
+                    className="flex items-center gap-1.5 cursor-pointer text-white-600 underline hover:text-white transition-colors duration-300"
                     href={currentProject.href}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <p className="grid-subtext sm2:!text-sm">See it live</p>
+                    <p className="grid-subtext sm2:!text-sm hover:text-white transition-colors duration-300">See it live</p>
                     <img src="src/assets/arrow-up.png" alt="arrow" className="w-2.5 h-2.5" />
                   </a>
                 </div>
@@ -225,7 +225,7 @@ const About = () => {
               ))}
             </div>
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600 underline"
+              className="flex items-center gap-2 cursor-pointer text-white-600 underline hover:text-white transition-colors duration-300"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer"
