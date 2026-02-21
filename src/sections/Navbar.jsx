@@ -8,7 +8,7 @@ const NavItems = () => {
                                 <li key={id} className="nav-li">
                                         <a 
                                                 href={href} 
-                                                className="nav-li_a"
+                                                className="nav-li_a block w-full"
                                                 onClick={() => {}}
                                         >
                                                 {name}
