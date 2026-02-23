@@ -64,8 +64,6 @@ const Contact = () => {
                                                                 src="src/assets/arrow-up.png" 
                                                                 alt="arrow" 
                                                                 className="w-2.5 h-2.5"
-                                                                // className="w-2.5 h-2.5 opacity-60 group-hover/link:opacity-100 transition-opacity duration-300"
-                                                                // style={{ filter: "brightness(0) invert(1)" }}
                                                         />
                                                 </a>
                                         </p>
@@ -112,16 +110,18 @@ const Contact = () => {
                                                         />
                                                 </label>
                                                 <button 
-                                                        className="field-btn cursor-pointer disabled:cursor-not-allowed"
+                                                        className="field-btn cursor-pointer disabled:cursor-not-allowed relative overflow-hidden"
                                                         type="submit"
                                                         disabled={loading}        
                                                 >
-                                                        {loading ? "Sending..." : "Send message"}
-                                                        <img 
-                                                                src="src/assets/arrow-up.png"
-                                                                alt="arrow-up"
-                                                                className="field-btn_arrow"
-                                                        />
+                                                        <span className="relative z-10 flex items-center gap-3">
+                                                                {loading ? "Sending..." : "Send message"}
+                                                                <img 
+                                                                        src="src/assets/arrow-up.png"
+                                                                        alt="arrow-up"
+                                                                        className="field-btn_arrow"
+                                                                />
+                                                        </span>
                                                 </button>
                                         </form>
                                 </div>
