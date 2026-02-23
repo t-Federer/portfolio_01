@@ -54,30 +54,30 @@ const About = () => {
           <div className="w-full sm2:w-2/5 grid-container !gap-2 !p-4 overflow-hidden">
             <div className="flex flex-col flex-1 justify-between gap-4">
               <div className="flex flex-col gap-2">
-                <p className="grid-headtext !text-base !mb-0">Who am I</p>
-                <p className="grid-subtext sm2:!text-sm">
+                <p className="grid-headtext !text-xl !mb-0">Who am I</p>
+                <p className="grid-subtext">
                   Recent Master's graduate with honors in Digital Humanities.
                 </p>
-                <p className="grid-subtext sm2:!text-sm">
+                <p className="grid-subtext">
                   Based in Italy, I blend technology and creativity to craft human-centered UXs.
                 </p>
               </div>
               <a href="#contact" className="w-full shrink-0">
-                <Button name={<span className="text-sm">Contact Me</span>} isBeam containerClass="w-full mt-0" />
+                <Button name="Contact Me" isBeam containerClass="w-full mt-0" />
               </a>
             </div>
           </div>
 
           {/* Tools — visible from sm2 up, 3-column grid */}
           <div className="hidden sm2:flex w-3/5 grid-container !gap-2 !p-4 flex-col overflow-hidden">
-            <p className="grid-headtext !text-base !mb-0 shrink-0">Tools I'm used to</p>
+            <p className="grid-headtext !text-xl !mb-0 shrink-0">Tools I'm used to</p>
             <ul className="techstack-grid flex-1 min-h-0 list-none m-0 p-0">
               {techStack.map((tech, index) => (
                 <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
                   <div className="tech-logo techstack-logo shrink-0">
                     <img src={tech.path} alt={tech.label} className="w-4 h-4 object-contain" />
                   </div>
-                  <span className="text-sm whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white">
+                  <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                     {tech.label}
                   </span>
                 </li>
@@ -89,14 +89,14 @@ const About = () => {
 
         {/* Tools on its own row — mobile only (< sm2), 2-column grid */}
         <div className="flex sm2:hidden grid-container !gap-2 !p-4 flex-col overflow-hidden">
-          <p className="grid-headtext !text-base !mb-2 shrink-0">Tools I'm used to</p>
+          <p className="grid-headtext !text-xl !mb-2 shrink-0">Tools I'm used to</p>
           <ul className="techstack-grid-mobile flex-1 min-h-0 list-none m-0 p-0">
             {techStack.map((tech, index) => (
               <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
                 <div className="tech-logo techstack-logo shrink-0">
                   <img src={tech.path} alt={tech.label} className="w-4 h-4 object-contain" />
                 </div>
-                <span className="whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white">
+                <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                   {tech.label}
                 </span>
               </li>
@@ -111,7 +111,7 @@ const About = () => {
           <div className="w-full sm2:w-3/5 grid-container !p-4 relative flex flex-col overflow-hidden">
             <div className="flex flex-col flex-1 justify-between gap-4">
               <div className="flex flex-col gap-2">
-                <p className="grid-headtext !text-base !mb-2 sm2:!mb-0">My Projects</p>
+                <p className="grid-headtext !text-xl !mb-2 sm2:!mb-0">My Projects</p>
                 <div className="flex flex-col gap-1.5">
                   <div className="flex items-center gap-2">
                     <img
@@ -119,10 +119,10 @@ const About = () => {
                       alt="logo"
                       className="h-5 w-5 object-contain rounded shrink-0"
                     />
-                    <p className="grid-subtext sm2:!text-sm font-semibold">{currentProject.title}</p>
+                    <p className="grid-subtext font-semibold">{currentProject.title}</p>
                   </div>
-                  <p className="grid-subtext sm2:!text-sm">{currentProject.desc}</p>
-                  <p className="grid-subtext sm2:!text-sm">{currentProject.subdesc}</p>
+                  <p className="grid-subtext">{currentProject.desc}</p>
+                  <p className="grid-subtext">{currentProject.subdesc}</p>
                 </div>
               </div>
               <div className="relative flex flex-col gap-4 z-10 shrink-0">
@@ -134,15 +134,26 @@ const About = () => {
                       </div>
                     ))}
                   </div>
-                  <a
-                    className="flex items-center gap-1.5 cursor-pointer text-white-600 underline hover:text-white transition-colors duration-300"
-                    href={currentProject.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <p className="grid-subtext sm2:!text-sm hover:text-white transition-colors duration-300">See it live</p>
-                    <img src="src/assets/arrow-up.png" alt="arrow" className="w-2.5 h-2.5" />
-                  </a>
+                  <div className="flex items-center gap-1.5 text-white-600">
+                    <a
+                      className="grid-subtext hover:text-white transition-colors duration-300 underline"
+                      href={currentProject.codeHref}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Code
+                    </a>
+                    <span className="grid-subtext select-none">•</span>
+                    <a
+                      className="flex items-center gap-1 grid-subtext hover:text-white transition-colors duration-300 underline"
+                      href={currentProject.linkHref}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Link
+                      <img src="src/assets/arrow-up.png" alt="arrow" className="w-2.5 h-2.5" />
+                    </a>
+                  </div>
                 </div>
                 <div className="flex justify-between items-center">
                   <button className="arrow-btn" onClick={() => handleNavigation("previous")}>
@@ -190,7 +201,7 @@ const About = () => {
                 <div className="tech-logo shrink-0">
                   <img src={tech.path} alt={tech.label} className="w-6 h-6 object-contain" />
                 </div>
-                <span className="whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white">
+                <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                   {tech.label}
                 </span>
               </li>
@@ -224,15 +235,26 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600 underline hover:text-white transition-colors duration-300"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>See it live</p>
-              <img src="src/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            <div className="flex items-center gap-2 text-white-600">
+              <a
+                className="cursor-pointer underline hover:text-white transition-colors duration-300 grid-subtext"
+                href={currentProject.codeHref}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+              <span className="grid-subtext select-none">•</span>
+              <a
+                className="flex items-center gap-1.5 cursor-pointer underline hover:text-white transition-colors duration-300 grid-subtext"
+                href={currentProject.linkHref}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link
+                <img src="src/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+              </a>
+            </div>
           </div>
           <div className="relative flex justify-between items-center z-10">
             <button className="arrow-btn" onClick={() => handleNavigation("previous")}>
@@ -254,4 +276,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About

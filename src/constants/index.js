@@ -22,12 +22,12 @@ export const techStack = [
   { name: "React", path: "src/assets/tailwindcss.png", label: "Tailwind" },
   { name: "React", path: "src/assets/react.svg", label: "React" },
   { name: "React", path: "src/assets/react.svg", label: "Three.js" },
-  { name: "React", path: "src/assets/react.svg", label: "Python" },
   { name: "React", path: "src/assets/react.svg", label: "SQL" },
-  { name: "React", path: "src/assets/figma.svg", label: "Figma" },
   { name: "React", path: "src/assets/react.svg", label: "Illustrator" },
-  { name: "React", path: "src/assets/react.svg", label: "PhotoShop" },
   { name: "React", path: "src/assets/react.svg", label: "Lightroom" },
+  { name: "React", path: "src/assets/react.svg", label: "PhotoShop" },
+  { name: "React", path: "src/assets/react.svg", label: "Python" },
+  { name: "React", path: "src/assets/figma.svg", label: "Figma" },
   { name: "React", path: "src/assets/react.svg", label: "Unreal" },
   { name: "React", path: "src/assets/react.svg", label: "Blender" },
 ];
@@ -38,7 +38,8 @@ export const myProjects = [
     desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created.',
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    codeHref: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    linkHref: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
     logo: 'src/assets/project-logo1.png',
     logoStyle: {
@@ -75,7 +76,8 @@ export const myProjects = [
     desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. ',
     subdesc:
       'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    codeHref: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    linkHref: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
     texture: '/textures/project/project2.mp4',
     logo: 'src/assets/project-logo2.png',
     logoStyle: {
@@ -112,7 +114,8 @@ export const myProjects = [
     desc: 'An innovative healthcare platform designed to streamline essential medical processes. ',
     subdesc:
       'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    codeHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    linkHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
     texture: '/textures/project/project3.mp4',
     logo: 'src/assets/project-logo3.png',
     logoStyle: {
@@ -151,7 +154,8 @@ export const myProjects = [
     desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard.',
     subdesc:
       'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+    codeHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+    linkHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     texture: '/textures/project/project4.mp4',
     logo: 'src/assets/project-logo4.png',
     logoStyle: {
@@ -188,7 +192,8 @@ export const myProjects = [
     desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology.',
     subdesc:
       'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+    codeHref: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+    linkHref: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
     texture: '/textures/project/project5.mp4',
     logo: 'src/assets/project-logo5.png',
     logoStyle: {
@@ -249,5 +254,60 @@ export const workExperiences = [
     title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
     icon: 'src/assets/notion.svg',
     animation: 'salute',
+  },
+  {
+    id: 4,
+    name: 'Notion',
+    pos: 'Junior Web Developer',
+    duration: '2019 - 2020',
+    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+    icon: 'src/assets/notion.svg',
+    animation: 'salute',
+  },
+  {
+    id: 5,
+    name: 'Notion',
+    pos: 'Junior Web Developer',
+    duration: '2019 - 2020',
+    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+    icon: 'src/assets/notion.svg',
+    animation: 'salute',
+  },
+];
+
+export const languages = [
+  {
+    label: "IT",
+    sublabel: "Native",
+    path: "src/assets/react.svg",
+  },
+  {
+    label: "EN",
+    sublabel: "Upper B2",
+    path: "src/assets/react.svg",
+  },
+  {
+    label: "JP",
+    sublabel: "N5 (wip)",
+    path: "src/assets/react.svg",
+  },
+  {
+    label: "FR",
+    sublabel: "A2",
+    path: "src/assets/react.svg",
+  },
+  {
+    label: "ES",
+    sublabel: "A1",
+    path: "src/assets/react.svg",
+  },
+];
+
+export const publicationsList = [
+  {
+    year: "2025",
+    title: "Informatica di oggi per raccontare l\u2019informatica di ieri", // "" \u201C \u201D
+    published: "Digital History",
+    link: "https://www.aracneeditrice.eu/it/pubblicazioni/estratti/10.53136/97912218229846-informatica-di-oggi-per-raccontare-l-informatica-di-ieri-estratto.html",
   },
 ];
