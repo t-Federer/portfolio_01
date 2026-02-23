@@ -38,7 +38,7 @@ export const myProjects = [
     desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created.',
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex.',
-    codeHref: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    codeHref: '',
     linkHref: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
     logo: 'src/assets/project-logo1.png',
@@ -47,7 +47,6 @@ export const myProjects = [
       border: '0.2px solid #36201D',
       // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: 'src/assets/spotlight1.png',
     tags: [
       {
         id: 1,
@@ -85,7 +84,6 @@ export const myProjects = [
       border: '0.2px solid #17293E',
       // boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: 'src/assets/spotlight2.png',
     tags: [
       {
         id: 1,
@@ -125,7 +123,6 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       // boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: 'src/assets/spotlight3.png',
     tags: [
       {
         id: 1,
@@ -163,7 +160,6 @@ export const myProjects = [
       border: '0.2px solid #0E2D58',
       // boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
-    spotlight: 'src/assets/spotlight4.png',
     tags: [
       {
         id: 1,
@@ -201,7 +197,6 @@ export const myProjects = [
       border: '0.2px solid #252262',
       // boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
-    spotlight: 'src/assets/spotlight5.png',
     tags: [
       {
         id: 1,

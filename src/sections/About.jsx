@@ -135,15 +135,19 @@ const About = () => {
                     ))}
                   </div>
                   <div className="flex items-center gap-1.5 text-white-600">
-                    <a
-                      className="grid-subtext hover:text-white transition-colors duration-300 underline"
-                      href={currentProject.codeHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Code
-                    </a>
-                    <span className="grid-subtext select-none">•</span>
+                    {currentProject.codeHref && (
+                      <>
+                        <a
+                          className="grid-subtext hover:text-white transition-colors duration-300 underline"
+                          href={currentProject.codeHref}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Code
+                        </a>
+                        <span className="grid-subtext select-none">•</span>
+                      </>
+                    )}
                     <a
                       className="flex items-center gap-1 grid-subtext hover:text-white transition-colors duration-300 underline"
                       href={currentProject.linkHref}
@@ -236,15 +240,19 @@ const About = () => {
               ))}
             </div>
             <div className="flex items-center gap-2 text-white-600">
-              <a
-                className="cursor-pointer underline hover:text-white transition-colors duration-300 grid-subtext"
-                href={currentProject.codeHref}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Code
-              </a>
-              <span className="grid-subtext select-none">•</span>
+              {currentProject.codeHref && (
+                <>
+                  <a
+                    className="cursor-pointer underline hover:text-white transition-colors duration-300 grid-subtext"
+                    href={currentProject.codeHref}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                  <span className="grid-subtext select-none">•</span>
+                </>
+              )}
               <a
                 className="flex items-center gap-1.5 cursor-pointer underline hover:text-white transition-colors duration-300 grid-subtext"
                 href={currentProject.linkHref}
