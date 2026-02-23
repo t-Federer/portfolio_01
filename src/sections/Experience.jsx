@@ -10,7 +10,7 @@ const LanguageList = () => (
         <div className="tech-logo techstack-logo shrink-0 xl2:w-10 xl2:h-10 xl2:p-2">
           <img src={lang.path} alt={lang.label} className="w-4 h-4 xl2:w-6 xl2:h-6 object-contain" />
         </div>
-        <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
+        <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-300 group-hover:text-white cursor-text">
           {lang.label}: {lang.sublabel}
         </span>
       </li>
@@ -34,7 +34,7 @@ const LanguageListMobile = () => (
         <div className="tech-logo techstack-logo shrink-0">
           <img src={lang.path} alt={lang.label} className="w-4 h-4 object-contain" />
         </div>
-        <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
+        <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-300 group-hover:text-white cursor-text">
           {lang.label}: {lang.sublabel}
         </span>
       </li>

@@ -45,17 +45,29 @@ const Contact = () => {
         }
 
         return (
-                <section id="contact" className="c-space my-20">
-                        <div className="relative min-h-screen flex items-center justify-center flex-col">
-                                {/* <img 
-                                        src="src/assets/terminal.png" 
-                                        alt="terminal background" 
-                                        className="absolute inset-0 min-h-screen"
-                                /> */}
-                                <div className="contact-container">
+                <section id="contact" className="c-space my-20 scroll-mt-25 sm2:scroll-mt-0 xl2:scroll-mt-0">
+                                <div className="contact-container mx-auto">
                                         <h3 className="head-text">Let's get in touch</h3>
-                                        <p className="text-lg text-white-600 mt-3">
-                                                Wheter you're looking to build a new website, improve your existing one, or bring a unique project to life, I'm here to help.
+                                        <p className="grid-subtext mt-3">
+                                                Whether you{"\u2019"}re looking to build a new website or bring a unique creative project to life, I{"\u2019"}m here to help.
+                                        </p>
+                                        <p className="grid-subtext mt-2">
+                                                Reach out via the form below, or connect with me on{" "}
+                                                <a 
+                                                        href="https://www.linkedin.com/in/talaricofederico" 
+                                                        target="_blank" 
+                                                        rel="noreferrer"
+                                                        className="group/link inline-flex items-center gap-1 underline hover:text-white transition-colors duration-300"
+                                                >
+                                                        LinkedIn
+                                                        <img 
+                                                                src="src/assets/arrow-up.png" 
+                                                                alt="arrow" 
+                                                                className="w-2.5 h-2.5"
+                                                                // className="w-2.5 h-2.5 opacity-60 group-hover/link:opacity-100 transition-opacity duration-300"
+                                                                // style={{ filter: "brightness(0) invert(1)" }}
+                                                        />
+                                                </a>
                                         </p>
                                         <form  
                                                 ref={formRef}
@@ -95,11 +107,12 @@ const Contact = () => {
                                                                 required
                                                                 rows={5}
                                                                 className="field-input"
+                                                                style={{ resize: "none" }}
                                                                 placeholder="Hi, I'm interested in..."
                                                         />
                                                 </label>
                                                 <button 
-                                                        className="field-btn"
+                                                        className="field-btn cursor-pointer disabled:cursor-not-allowed"
                                                         type="submit"
                                                         disabled={loading}        
                                                 >
@@ -112,7 +125,6 @@ const Contact = () => {
                                                 </button>
                                         </form>
                                 </div>
-                        </div>
                 </section>
         )
 }

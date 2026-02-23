@@ -419,8 +419,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 @utility field-label {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #AFB0B6;
 }
 
@@ -433,8 +433,8 @@ html::-webkit-scrollbar-thumb:hover {
   padding-bottom: 0.5rem;
   min-height: 3.5rem;
   border-radius: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #E4E4E6;
   box-shadow: 0 25px 50px -12px #0E0E10;
   
@@ -448,7 +448,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 @utility field-btn {
-  background-color: #3A3A49;
+  background-color: #1C1C21;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
@@ -459,8 +459,8 @@ html::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #ffffff;
   gap: 0.75rem;
 }
@@ -469,7 +469,11 @@ html::-webkit-scrollbar-thumb:hover {
   width: 0.625rem;
   height: 0.625rem;
   object-fit: contain;
-  filter: invert(1) brightness(0);
+}
+
+/* Arrow icon forced to white — kept outside @utility to avoid Tailwind v4 parsing issues */
+.field-btn_arrow {
+  filter: brightness(0) invert(1);
 }
 
 @utility social-icon {
