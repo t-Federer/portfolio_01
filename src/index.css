@@ -291,17 +291,34 @@ html::-webkit-scrollbar-thumb:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   border-radius: 9999px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.1) 10%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.025) 100%
-  );
+  background-color: #1C1C21;
+  position: relative;
+  overflow: hidden;
   
   &:active {
     transform: scale(0.95);
   }
+}
+
+/* ── Arrow button hover: radial expand from center (matches social-icon) ── */
+.arrow-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: #3A3A49;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.arrow-btn:hover::before {
+  transform: scale(1);
+}
+
+.arrow-btn img {
+  position: relative;
+  z-index: 1;
 }
 
 @utility tech-logo {
