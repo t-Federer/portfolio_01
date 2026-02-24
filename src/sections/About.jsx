@@ -1,4 +1,4 @@
-import { Suspense, useState, useCallback } from "react";
+import { Suspense, useState, useCallback, useMemo } from "react";
 import Button from "../components/Button";
 import { myProjects, techStack } from "../constants/index";
 import { Canvas } from "@react-three/fiber";
@@ -7,6 +7,9 @@ import DemoComputer from "../components/DemoComputer";
 import CanvasLoader from "../components/CanvasLoader";
 
 const projectCount = myProjects.length;
+
+// Lookup map: label → tech object (built once, outside the component)
+const techMap = Object.fromEntries(techStack.map(t => [t.label, t]));
 
 const ProjectCanvas = ({ texture, animTrigger }) => (
   <Canvas
@@ -40,6 +43,12 @@ const About = () => {
     });
     setAnimTrigger((prev) => prev + 1);
   }, []);
+
+  // Resolve tag labels → tech objects for the current project
+  const currentTags = useMemo(
+    () => currentProject.tags.map(label => techMap[label]).filter(Boolean),
+    [currentProject]
+  );
 
   return (
     <section id="about" className="c-space my-20 scroll-mt-20 sm2:scroll-mt-35 xl2:scroll-mt-22">
@@ -75,7 +84,7 @@ const About = () => {
               {techStack.map((tech, index) => (
                 <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
                   <div className="tech-logo techstack-logo shrink-0">
-                    <img src={tech.path} alt={tech.label} className="w-4 h-4 object-contain" />
+                    <img src={tech.path} alt={tech.label} className={`${tech.logoSize.tablet} object-contain`} />
                   </div>
                   <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                     {tech.label}
@@ -94,7 +103,7 @@ const About = () => {
             {techStack.map((tech, index) => (
               <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
                 <div className="tech-logo techstack-logo shrink-0">
-                  <img src={tech.path} alt={tech.label} className="w-4 h-4 object-contain" />
+                  <img src={tech.path} alt={tech.label} className={`${tech.logoSize.mobile} object-contain`} />
                 </div>
                 <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                   {tech.label}
@@ -128,9 +137,10 @@ const About = () => {
               <div className="relative flex flex-col gap-4 z-10 shrink-0">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <div className="flex items-center gap-1.5">
-                    {currentProject.tags.map((tag, index) => (
+                    {/* mobile/tablet — logoSize.mobile */}
+                    {currentTags.map((tech, index) => (
                       <div key={index} className="tech-logo techstack-logo">
-                        <img src={tag.path} alt={tag.name} />
+                        <img src={tech.path} alt={tech.label} className={`${tech.logoSize.mobile} object-contain`} />
                       </div>
                     ))}
                   </div>
@@ -203,7 +213,7 @@ const About = () => {
             {techStack.map((tech, index) => (
               <li key={index} className="group flex items-center gap-1.5 px-1 cursor-default">
                 <div className="tech-logo shrink-0">
-                  <img src={tech.path} alt={tech.label} className="w-6 h-6 object-contain" />
+                  <img src={tech.path} alt={tech.label} className={`${tech.logoSize.desktop} object-contain`} />
                 </div>
                 <span className="text-base whitespace-nowrap text-white-600 transition-colors duration-200 group-hover:text-white cursor-text">
                   {tech.label}
@@ -233,9 +243,10 @@ const About = () => {
           </div>
           <div className="relative flex items-center justify-between flex-wrap gap-3 z-10 mt-auto">
             <div className="flex items-center gap-3">
-              {currentProject.tags.map((tag, index) => (
+              {/* desktop — logoSize.desktop */}
+              {currentTags.map((tech, index) => (
                 <div key={index} className="tech-logo">
-                  <img src={tag.path} alt={tag.name} />
+                  <img src={tech.path} alt={tech.label} className={`${tech.logoSize.desktop} object-contain`} />
                 </div>
               ))}
             </div>

@@ -7,9 +7,10 @@ const LanguageList = () => (
   <ul className="list-none m-0 p-0 flex flex-col gap-2">
     {languages.map((lang, index) => (
       <li key={index} className="group flex items-center gap-2 cursor-default">
-        <div className="tech-logo techstack-logo shrink-0 xl2:w-10 xl2:h-10 xl2:p-2">
-          <img src={lang.path} alt={lang.label} className="w-4 h-4 xl2:w-6 xl2:h-6 object-contain" />
-        </div>
+        <span
+          className={`fi fi-${lang.flag} shrink-0 rounded-sm xl2:text-2xl`}
+          style={{ fontSize: "1.1rem", lineHeight: 1 }}
+        />
         <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-300 group-hover:text-white cursor-text">
           {lang.label}: {lang.sublabel}
         </span>
@@ -31,9 +32,10 @@ const LanguageListMobile = () => (
   >
     {languages.map((lang, index) => (
       <li key={index} className="group flex items-center gap-2 cursor-default">
-        <div className="tech-logo techstack-logo shrink-0">
-          <img src={lang.path} alt={lang.label} className="w-4 h-4 object-contain" />
-        </div>
+        <span
+          className={`fi fi-${lang.flag} shrink-0 rounded-sm`}
+          style={{ fontSize: "1.1rem", lineHeight: 1 }}
+        />
         <span className="text-base leading-5 whitespace-nowrap text-white-600 transition-colors duration-300 group-hover:text-white cursor-text">
           {lang.label}: {lang.sublabel}
         </span>
@@ -73,7 +75,7 @@ const WorkList = ({ className = "", style = {} }) => (
         </div>
         <div className="sm:p-5 px-2.5 py-5">
           <p className="font-bold text-white-800">{item.name}</p>
-          <p className="text-base mb-5 text-white-600">{item.pos} -- {item.duration}</p>
+          <p className="text-base mb-5 text-white-600">{item.pos} • {item.duration}</p>
           <p className="text-base leading-5 text-white-600 group-hover:text-white transition-colors ease-in-out duration-500">{item.title}</p>
         </div>
       </div>
@@ -125,7 +127,7 @@ const Experience = () => {
                   </div>
                   <div className="sm:p-5 px-2.5 py-5">
                     <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-base mb-5 text-white-600">{item.pos} -- {item.duration}</p>
+                    <p className="text-base mb-5 text-white-600">{item.pos} • {item.duration}</p>
                     <p className="text-base leading-5 text-white-600 group-hover:text-white transition-colors ease-in-out duration-500">{item.title}</p>
                   </div>
                 </div>

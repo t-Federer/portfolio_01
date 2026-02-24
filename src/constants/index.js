@@ -17,29 +17,133 @@ export const navLinks = [
 ];
 
 export const techStack = [
-  { name: "React", path: "src/assets/react.svg", label: "Git" },
-  { name: "React", path: "src/assets/react.svg", label: "JavaScript" },
-  { name: "React", path: "src/assets/tailwindcss.png", label: "Tailwind" },
-  { name: "React", path: "src/assets/react.svg", label: "React" },
-  { name: "React", path: "src/assets/react.svg", label: "Three.js" },
-  { name: "React", path: "src/assets/react.svg", label: "SQL" },
-  { name: "React", path: "src/assets/react.svg", label: "Illustrator" },
-  { name: "React", path: "src/assets/react.svg", label: "Lightroom" },
-  { name: "React", path: "src/assets/react.svg", label: "PhotoShop" },
-  { name: "React", path: "src/assets/react.svg", label: "Python" },
-  { name: "React", path: "src/assets/figma.svg", label: "Figma" },
-  { name: "React", path: "src/assets/react.svg", label: "Unreal" },
-  { name: "React", path: "src/assets/react.svg", label: "Blender" },
+  {
+    path: "src/assets/git.svg",
+    label: "Git",
+    logoSize: { 
+      mobile: "w-4 h-4", 
+      tablet: "w-4 h-4", 
+      desktop: "w-6.5 h-6.5" 
+    },
+  },
+  {
+    path: "src/assets/javascript.svg",
+    label: "JavaScript",
+    logoSize: { 
+      mobile: "w-3.5 h-3.5", 
+      tablet: "w-3.5 h-3.5", 
+      desktop: "w-5.5 h-5.5" 
+    },
+  },
+  {
+    path: "src/assets/tailwindcss.png",
+    label: "Tailwind",
+    logoSize: { 
+      mobile: "w-3.5 h-3.5", 
+      tablet: "w-3.5 h-3.5", 
+      desktop: "w-5 h-5" 
+    },
+  },
+  {
+    path: "src/assets/react.svg",
+    label: "React",
+    logoSize: { 
+      mobile: "w-4 h-4", 
+      tablet: "w-4 h-4", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/threejs_bg.svg",
+    label: "Three.js",
+    logoSize: { 
+      mobile: "w-3.5 h-3.5", 
+      tablet: "w-3.5 h-3.5", 
+      desktop: "w-5.5 h-5.5" 
+    },
+  },
+  {
+    path: "src/assets/sql.svg",
+    label: "SQL",
+    logoSize: { 
+      mobile: "w-5 h-5", 
+      tablet: "w-5 h-5", 
+      desktop: "w-7 h-7" 
+    },
+  },
+  {
+    path: "src/assets/adobe_ai.svg",
+    label: "Illustrator",
+    logoSize: { 
+      mobile: "w-5 h-5", 
+      tablet: "w-5 h-5", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/adobe_lr.svg",
+    label: "Lightroom",
+    logoSize: { 
+      mobile: "w-5 h-5", 
+      tablet: "w-5 h-5", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/adobe_ps.svg",
+    label: "PhotoShop",
+    logoSize: { 
+      mobile: "w-5 h-5", 
+      tablet: "w-5 h-5", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/python.svg",
+    label: "Python",
+    logoSize: { 
+      mobile: "w-4 h-4", 
+      tablet: "w-4 h-4", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/figma.svg",
+    label: "Figma",
+    logoSize: { 
+      mobile: "w-5 h-5", 
+      tablet: "w-5 h-5", 
+      desktop: "w-7 h-7" 
+    },
+  },
+  {
+    path: "src/assets/ue_white.svg",
+    label: "Unreal",
+    logoSize: { 
+      mobile: "w-4 h-4", 
+      tablet: "w-4 h-4", 
+      desktop: "w-6 h-6" 
+    },
+  },
+  {
+    path: "src/assets/blender.svg",
+    label: "Blender",
+    logoSize: { 
+      mobile: "w-4 h-4", 
+      tablet: "w-4 h-4", 
+      desktop: "w-6 h-6" 
+    },
+  },
 ];
 
 export const myProjects = [
   {
-    title: "Macbook Pro - Landing page (clone)",
+    title: 'HMR 6-Bit Adder',
     desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created.',
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex.',
     codeHref: '',
-    linkHref: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    linkHref: 'https://www.progettohmr.it/MR-VR/',
     texture: '/textures/project/project1.mp4',
     logo: 'src/assets/project-logo1.png',
     logoStyle: {
@@ -47,31 +151,10 @@ export const myProjects = [
       border: '0.2px solid #36201D',
       // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: 'src/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'src/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: 'src/assets/framer.png',
-      },
-    ],
+    tags: ["Unreal", "Blender", "PhotoShop"],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
+    title: "Macbook Pro - Landing page (clone)",
     desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. ',
     subdesc:
       'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
@@ -84,31 +167,10 @@ export const myProjects = [
       border: '0.2px solid #17293E',
       // boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: 'src/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'src/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: 'src/assets/framer.png',
-      },
-    ],
+    tags: ["Git", "React", "Tailwind", "Three.js"],
   },
   {
-    title: 'CarePulse - Health Management System',
+    title: "Google Drive (clone)", 
     desc: 'An innovative healthcare platform designed to streamline essential medical processes. ',
     subdesc:
       'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
@@ -123,31 +185,10 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       // boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: 'src/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'src/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: 'src/assets/framer.png',
-      },
-    ],
+    tags: ["Git", "React", "Tailwind"],
   },
   {
-    title: 'Horizon - Online Banking Platform',
+    title: 'Hangman',
     desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard.',
     subdesc:
       'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
@@ -160,148 +201,57 @@ export const myProjects = [
       border: '0.2px solid #0E2D58',
       // boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: 'src/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'src/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: 'src/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach.',
-    codeHref: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    linkHref: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: 'src/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      // boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: 'src/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'src/assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: 'src/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: 'src/assets/framer.png',
-      },
-    ],
+    tags: ["Git", "React"],
   },
 ];
 
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: 'src/assets/framer.svg',
-    animation: 'victory',
+    name: 'University of Pisa',
+    pos: 'Master\u2019s degree with honors in Digital Humanities',
+    duration: '2025',
+    title: "Thesis title: \u201CHMR 6-bit Adder, a video game developed by interns and thesis students: proposals on the role of the Scrum Master\u201D.",
+    icon: 'src/assets/unipi_white.svg',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: 'src/assets/figma.svg',
-    animation: 'clapping',
+    name: 'University of Pisa',
+    pos: 'Scrum Master / Developer (Internship)',
+    duration: 'Dec 2024 - Feb 2025',
+    title: "Built a Single Page Application with 6 interactive charts summarizing 3.5 years of development for the HMR 6\u2011Bit Adder video game, contributing to both development and team processes. Served as Scrum Master for a 6\u2011member student team, leading biweekly meetings and continuous reviews that improved integration and traceability; the game is still in development.",
+    icon: 'src/assets/unipi_white.svg',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: 'src/assets/notion.svg',
-    animation: 'salute',
+    name: 'University of Pisa',
+    pos: 'Bachelor\u2019s degree in Digital Humanities',
+    duration: '2021',
+    title: "Thesis title: \u201CA historically styled menu system for the virtual replica of the first CEP adder\u201D.",
+    icon: 'src/assets/unipi_white.svg',
   },
   {
     id: 4,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: 'src/assets/notion.svg',
-    animation: 'salute',
-  },
-  {
-    id: 5,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: 'src/assets/notion.svg',
-    animation: 'salute',
+    name: 'University of Pisa',
+    pos: 'Junior Game Developer (Intership)',
+    duration: 'Jan 2020 - Nov 2020',
+    title: "Designed the Unreal Engine architecture and integrated a real\u2011time C++ simulator for the HMR 6\u2011Bit Adder video game. Created 1950s\u2011inspired prototype menus that improved usability, and verified stable 60fps across all team hardware.",
+    icon: 'src/assets/unipi_white.svg',
   },
 ];
 
 export const languages = [
-  {
-    label: "IT",
-    sublabel: "Native",
-    path: "src/assets/react.svg",
-  },
-  {
-    label: "EN",
-    sublabel: "Upper B2",
-    path: "src/assets/react.svg",
-  },
-  {
-    label: "JP",
-    sublabel: "N5 (wip)",
-    path: "src/assets/react.svg",
-  },
-  {
-    label: "FR",
-    sublabel: "A2",
-    path: "src/assets/react.svg",
-  },
-  {
-    label: "ES",
-    sublabel: "A1",
-    path: "src/assets/react.svg",
-  },
+  { label: "IT", flag: "it", sublabel: "Native" },
+  { label: "EN", flag: "gb", sublabel: "Upper B2" },
+  { label: "JP", flag: "jp", sublabel: "N5 (wip)" },
+  { label: "FR", flag: "fr", sublabel: "A2" },
+  { label: "ES", flag: "es", sublabel: "A1" },
 ];
 
 export const publicationsList = [
   {
     year: "2025",
-    title: "Informatica di oggi per raccontare l\u2019informatica di ieri", // "" \u201C \u201D
+    title: "Informatica di oggi per raccontare l\u2019informatica di ieri",
     published: "Digital History",
     link: "https://www.aracneeditrice.eu/it/pubblicazioni/estratti/10.53136/97912218229846-informatica-di-oggi-per-raccontare-l-informatica-di-ieri-estratto.html",
   },
