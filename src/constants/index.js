@@ -233,7 +233,7 @@ export const workExperiences = [
   {
     id: 4,
     name: 'University of Pisa',
-    pos: 'Junior Game Developer (Intership)',
+    pos: 'Junior Game Developer (Internship)',
     duration: 'Jan 2020 - Nov 2020',
     title: "Designed the Unreal Engine architecture and integrated a real\u2011time C++ simulator for the HMR 6\u2011Bit Adder video game. Created 1950s\u2011inspired prototype menus that improved usability, and verified stable 60fps across all team hardware.",
     icon: 'src/assets/unipi_white.svg',
