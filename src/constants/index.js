@@ -139,29 +139,27 @@ export const techStack = [
 export const myProjects = [
   {
     title: 'HMR 6-Bit Adder',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex.',
+    desc: 'Step inside a virtual reconstruction of the original 1956 laboratory at the University of Pisa, where Italy\u2019s first electronic computer was built.',
+    subdesc: 'Discover the test module that became its first working component.',
     codeHref: '',
     linkHref: 'https://www.progettohmr.it/MR-VR/',
     texture: '/textures/project/project1.mp4',
-    logo: 'src/assets/project-logo1.png',
+    logo: 'src/assets/hmr6bitadder.png',
     logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
+      backgroundColor: '#290A1F',
+      border: '0.2px solid #1C1C21',
       // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
     tags: ["Unreal", "Blender", "PhotoShop"],
   },
   {
     title: "Macbook Pro - Landing page (clone)",
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. ',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+    desc: 'A frontend project that recreates an Apple‑style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
+    subdesc: '',
     codeHref: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    linkHref: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    linkHref: 'https://macbook-clone-landing.vercel.app/',
     texture: '/textures/project/project2.mp4',
-    logo: 'src/assets/project-logo2.png',
+    logo: 'src/assets/macbookClone.svg',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -169,36 +167,35 @@ export const myProjects = [
     },
     tags: ["Git", "React", "Tailwind", "Three.js"],
   },
-  {
-    title: "Google Drive (clone)", 
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. ',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    codeHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    linkHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: 'src/assets/project-logo3.png',
-    logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      // boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    },
-    tags: ["Git", "React", "Tailwind"],
-  },
+  // {
+  //   title: "Google Drive (clone)", 
+  //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. ',
+  //   subdesc:
+  //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+  //   codeHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+  //   linkHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+  //   texture: '/textures/project/project3.mp4',
+  //   logo: 'src/assets/project-logo3.png',
+  //   logoStyle: {
+  //     backgroundColor: '#60f5a1',
+  //     background:
+  //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+  //     border: '0.2px solid rgba(208, 213, 221, 1)',
+  //     // boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+  //   },
+  //   tags: ["Git", "React", "Tailwind"],
+  // },
   {
     title: 'Hangman',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+    desc: 'A simple React‑based hangman minigame that uses state and conditional rendering to manage progress, lives, and word reveal. The interface updates smoothly as each guess modifies the game state.',
+    subdesc: '',
     codeHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     linkHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     texture: '/textures/project/project4.mp4',
-    logo: 'src/assets/project-logo4.png',
+    logo: 'src/assets/hangman.svg',
     logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
+      backgroundColor: '#2A1816', //'#0E1F38',
+      border: '0.2px solid #36201D', //#0E2D58',
       // boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
     tags: ["Git", "React"],
