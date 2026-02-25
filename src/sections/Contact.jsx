@@ -47,7 +47,7 @@ const Contact = () => {
         return (
                 <section id="contact" className="c-space my-20 scroll-mt-25 sm2:scroll-mt-0 xl2:scroll-mt-0">
                                 <div className="contact-container mx-auto">
-                                        <h3 className="head-text">Let's get in touch</h3>
+                                        <h3 className="head-text">Let{"\u2019"}s get in touch</h3>
                                         <p className="grid-subtext mt-3">
                                                 Whether you{"\u2019"}re looking to build a new website or bring a unique creative project to life, I{"\u2019"}m here to help.
                                         </p>

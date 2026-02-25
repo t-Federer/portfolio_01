@@ -65,10 +65,10 @@ const About = () => {
               <div className="flex flex-col gap-2">
                 <p className="grid-headtext !text-xl !mb-0">Who am I</p>
                 <p className="grid-subtext">
-                  Recent Master's graduate with honors in Digital Humanities.
+                  Recent Master{"\u2019"}s graduate with honors in Digital Humanities.
                 </p>
                 <p className="grid-subtext">
-                  Based in Italy, I blend technology and creativity to craft human-centered UXs.
+                  Based in Italy, I blend technology and creativity to craft human-centered UX.
                 </p>
               </div>
               <a href="#contact" className="w-full shrink-0">
@@ -79,7 +79,7 @@ const About = () => {
 
           {/* Tools — visible from sm2 up, 3-column grid */}
           <div className="hidden sm2:flex w-3/5 grid-container !gap-2 !p-4 flex-col overflow-hidden">
-            <p className="grid-headtext !text-xl !mb-0 shrink-0">Tools I'm used to</p>
+            <p className="grid-headtext !text-xl !mb-0 shrink-0">Tools I{"\u2019"}m used to</p>
             <ul className="techstack-grid flex-1 min-h-0 list-none m-0 p-0">
               {techStack.map((tech, index) => (
                 <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
@@ -98,7 +98,7 @@ const About = () => {
 
         {/* Tools on its own row — mobile only (< sm2), 2-column grid */}
         <div className="flex sm2:hidden grid-container !gap-2 !p-4 flex-col overflow-hidden">
-          <p className="grid-headtext !text-xl !mb-2 shrink-0">Tools I'm used to</p>
+          <p className="grid-headtext !text-xl !mb-2 shrink-0">Tools I{"\u2019"}m used to</p>
           <ul className="techstack-grid-mobile flex-1 min-h-0 list-none m-0 p-0">
             {techStack.map((tech, index) => (
               <li key={index} className="group flex items-center gap-1 px-0.5 cursor-default">
@@ -196,10 +196,10 @@ const About = () => {
         <div className="col-span-3 row-span-1 grid-container">
           <p className="grid-headtext">Who am I</p>
           <p className="grid-subtext">
-            Recent Master's graduate with honors in Digital Humanities.
+            Recent Master{"\u2019"}s graduate with honors in Digital Humanities.
           </p>
           <p className="grid-subtext">
-            Based in Italy, I blend technology and creativity to craft human-centered UXs.
+            Based in Italy, I blend technology and creativity to craft human-centered UX.
           </p>
           <a href="#contact" className="w-full mt-auto">
             <Button name="Contact Me" isBeam containerClass="w-full mt-4" />
@@ -208,7 +208,7 @@ const About = () => {
 
         {/* Tech stack */}
         <div className="col-span-6 row-span-1 grid-container flex flex-col gap-2">
-          <p className="grid-headtext shrink-0">Tools I'm used to</p>
+          <p className="grid-headtext shrink-0">Tools I{"\u2019"}m used to</p>
           <ul className="techstack-grid-desktop flex-1 min-h-0 list-none m-0 p-0">
             {techStack.map((tech, index) => (
               <li key={index} className="group flex items-center gap-1.5 px-1 cursor-default">
