@@ -16,9 +16,9 @@ const NavItems = ({ closeMenu }) => {
                 }
 
                 target.scrollIntoView({ behavior: "smooth" });
-                e.preventDefault(); // gestiamo noi lo scroll
+                e.preventDefault();
 
-                // fallback timeout nel caso scrollend non scatti
+                // fallback timeout 
                 const fallback = setTimeout(closeMenu, 1000);
 
                 window.addEventListener(
@@ -65,7 +65,7 @@ const Navbar = () => {
                                                 aria-label="Toggle menu"
                                         >
                                                 <img
-                                                        src={isOpen ? {closeIcon} : {menuIcon}}
+                                                        src={isOpen ? closeIcon : menuIcon}
                                                         alt="toggle"
                                                         className="w-6 h-6"
                                                 />

@@ -161,7 +161,7 @@ export const myProjects = [
                 title: "Macbook Pro - Landing Page (clone)",
                 desc: 'A frontend project that recreates an Apple\u2011style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
                 subdesc: '',
-                codeHref: 'https://',
+                codeHref: 'https://github.com/t-Federer/apple_macbook_clone00',
                 linkHref: 'https://macbook-clone-landing.vercel.app/',
                 texture: `${base}textures/project/project2.mp4`,
                 logo: macbookLogo,
@@ -172,7 +172,7 @@ export const myProjects = [
                 tags: ["Git", "React", "Tailwind", "Three.js"],
         },
         {
-                title: 'HMR 6-Bit Adder',
+                title: 'HMR 6-Bit Adder (alpha)',
                 desc: 'Step inside a virtual reconstruction of the original 1956 laboratory at the University of Pisa, where Italy\u2019s first electronic computer was built.',
                 subdesc: 'Discover the test module that became its first working component.',
                 codeHref: '',
