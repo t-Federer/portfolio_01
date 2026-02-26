@@ -158,7 +158,7 @@ export const techStack = [
 
 export const myProjects = [
         {
-                title: "Macbook Pro - Landing page (clone)",
+                title: "Macbook Pro - Landing Page (clone)",
                 desc: 'A frontend project that recreates an Apple\u2011style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
                 subdesc: '',
                 codeHref: 'https://',
