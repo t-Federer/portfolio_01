@@ -31,6 +31,7 @@ const Contact = () => {
                                 message: form.message,
                                 time: new Date().toLocaleString('it-IT', { 
                                         timeZone: 'Europe/Rome',
+                                        dateStyle: 'short',
                                         timeStyle: 'short'
                                 })
                         }, 
