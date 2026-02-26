@@ -247,7 +247,7 @@ export const languages = [
 export const publicationsList = [
         {
                 year: "2025",
-                title: "Informatica di oggi per raccontare l\u2019informatica di ieri",
+                title: "Article",
                 published: "Digital History",
                 link: "https://www.aracneeditrice.eu/it/pubblicazioni/estratti/10.53136/97912218229846-informatica-di-oggi-per-raccontare-l-informatica-di-ieri-estratto.html",
         },

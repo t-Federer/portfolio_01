@@ -45,22 +45,26 @@ const LanguageListMobile = () => (
 )
 
 const PublicationsList = () => (
-        <ul className="list-disc pl-4 flex flex-col gap-3 marker:text-white-600">
-                {publicationsList.map((pub, index) => (
-                        <li key={index} className="text-base leading-5 text-white-600">
-                                {"\u201C"}
-                                <a
-                                        href={pub.link}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="underline text-white-600 hover:text-white transition-colors duration-300"
-                                >
-                                        {pub.title}
-                                </a>
-                                {"\u201D"}, in {pub.published}
-                        </li>
-                ))}
-        </ul>
+        <div className="flex flex-col flex-1">
+                <ul className="list-disc pl-4 flex flex-col gap-3 marker:text-white-600">
+                        {publicationsList.map((pub, index) => (
+                                <li key={index} className="text-base leading-5 text-white-600">
+                                        <a
+                                                href={pub.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="underline text-white-600 hover:text-white transition-colors duration-300"
+                                        >
+                                                {pub.title} in <i>{pub.published}</i>
+                                        </a>
+                                        , {pub.year}
+                                </li>
+                        ))}
+                </ul>
+                <p className="mt-auto pt-3 text-xs text-white-500">
+                        &#9888; <i>VPNs may block some links.</i> {/*⚠️*/}
+                </p>
+        </div>
 )
 
 const WorkList = ({ className = "", style = {} }) => (
