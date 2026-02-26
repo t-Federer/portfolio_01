@@ -20,7 +20,7 @@ const Contact = () => {
                 setLoading(true);
 
                 try {
-                         emailjs.send(
+                        emailjs.send(
                         "service_ne6wcwi", 
                         "template_ccqqqt9", 
                         {
@@ -28,7 +28,11 @@ const Contact = () => {
                                 to_name: "Federico",
                                 from_email: form.email,
                                 to_email: "talaricofederico@gmail.com",
-                                message: form.message
+                                message: form.message,
+                                time: new Date().toLocaleString('it-IT', { 
+                                        timeZone: 'Europe/Rome',
+                                        timeStyle: 'short'
+                                })
                         }, 
                         "xJ3_T4SE9uB-AEFEK"
                         )
