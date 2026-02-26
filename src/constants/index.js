@@ -158,20 +158,6 @@ export const techStack = [
 
 export const myProjects = [
         {
-                title: 'HMR 6-Bit Adder',
-                desc: 'Step inside a virtual reconstruction of the original 1956 laboratory at the University of Pisa, where Italy\u2019s first electronic computer was built.',
-                subdesc: 'Discover the test module that became its first working component.',
-                codeHref: '',
-                linkHref: 'https://www.progettohmr.it/MR-VR/',
-                texture: `${base}textures/project/project1.mp4`,
-                logo: hmrLogo,
-                logoStyle: {
-                        backgroundColor: '#290A1F',
-                        border: '0.2px solid #1C1C21',
-                },
-                tags: ["Unreal", "Blender", "PhotoShop"],
-        },
-        {
                 title: "Macbook Pro - Landing page (clone)",
                 desc: 'A frontend project that recreates an Apple\u2011style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
                 subdesc: '',
@@ -184,6 +170,20 @@ export const myProjects = [
                         border: '0.2px solid #17293E',
                 },
                 tags: ["Git", "React", "Tailwind", "Three.js"],
+        },
+        {
+                title: 'HMR 6-Bit Adder',
+                desc: 'Step inside a virtual reconstruction of the original 1956 laboratory at the University of Pisa, where Italy\u2019s first electronic computer was built.',
+                subdesc: 'Discover the test module that became its first working component.',
+                codeHref: '',
+                linkHref: 'https://www.progettohmr.it/MR-VR/',
+                texture: `${base}textures/project/project1.mp4`,
+                logo: hmrLogo,
+                logoStyle: {
+                        backgroundColor: '#290A1F',
+                        border: '0.2px solid #1C1C21',
+                },
+                tags: ["Unreal", "Blender", "PhotoShop"],
         },
         {
                 title: 'Hangman',
