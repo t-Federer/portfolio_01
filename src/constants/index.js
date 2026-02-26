@@ -156,7 +156,7 @@ export const myProjects = [
                 title: "Macbook Pro - Landing page (clone)",
                 desc: 'A frontend project that recreates an Apple‑style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
                 subdesc: '',
-                codeHref: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+                codeHref: 'https://',
                 linkHref: 'https://macbook-clone-landing.vercel.app/',
                 texture: '/textures/project/project2.mp4',
                 logo: 'src/assets/macbookClone.svg',
@@ -172,8 +172,8 @@ export const myProjects = [
         //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. ',
         //   subdesc:
         //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        //   codeHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-        //   linkHref: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        //   codeHref: 'https://',
+        //   linkHref: 'https://',
         //   texture: '/textures/project/project3.mp4',
         //   logo: 'src/assets/project-logo3.png',
         //   logoStyle: {
@@ -189,8 +189,8 @@ export const myProjects = [
                 title: 'Hangman',
                 desc: 'A simple React‑based hangman minigame that uses state and conditional rendering to manage progress, lives, and word reveal. The interface updates smoothly as each guess modifies the game state.',
                 subdesc: '',
-                codeHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-                linkHref: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+                codeHref: 'https://',
+                linkHref: 'https://',
                 texture: '/textures/project/project4.mp4',
                 logo: 'src/assets/hangman.svg',
                 logoStyle: {
