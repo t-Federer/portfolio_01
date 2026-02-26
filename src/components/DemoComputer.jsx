@@ -8,6 +8,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { myProjects } from '../constants/index';
 
+const base = import.meta.env.BASE_URL;
+
 const allTexturePaths = [...new Set(myProjects.map((p) => p.texture))];
 
 // Loads a single video texture (autoplay, loop) and reports it to the parent.
@@ -54,7 +56,7 @@ const DemoComputer = ({ texture, animTrigger, ...props }) => {
 
         const [activeTex, setActiveTex] = useState(null);
 
-        const { nodes, materials } = useGLTF('/models/computer.glb');
+        const { nodes, materials } = useGLTF(`${base}models/computer.glb`);
 
         const handleTextureLoaded = (path, tex) => {
                 if (!textureCache.current[path]) {
@@ -277,6 +279,6 @@ const DemoComputer = ({ texture, animTrigger, ...props }) => {
         );
 };
 
-useGLTF.preload('/models/computer.glb');
+useGLTF.preload(`${import.meta.env.BASE_URL}models/computer.glb`);
 
 export default DemoComputer;

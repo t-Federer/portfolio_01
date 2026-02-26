@@ -1,8 +1,10 @@
 import { useGLTF } from '@react-three/drei';
 import { useEffect } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 const Computers = (props) => {
-        const { scene } = useGLTF('./models/desktop_pc/scene.gltf');
+        const { scene } = useGLTF(`${base}models/desktop_pc/scene.gltf`);
 
         useEffect(() => {
                 console.log('Computer model loaded:', scene);
@@ -22,6 +24,6 @@ const Computers = (props) => {
         );
 };
 
-useGLTF.preload('./models/desktop_pc/scene.gltf');
+useGLTF.preload(`${import.meta.env.BASE_URL}models/desktop_pc/scene.gltf`);
 
 export default Computers;

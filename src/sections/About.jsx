@@ -1,4 +1,7 @@
 import { Suspense, useState, useCallback, useMemo } from "react";
+import arrowUp from '../assets/arrow-up.png';
+import leftArrow from '../assets/left-arrow.png';
+import rightArrow from '../assets/right-arrow.png';
 import Button from "../components/Button";
 import { myProjects, techStack } from "../constants/index";
 import { Canvas } from "@react-three/fiber";
@@ -165,16 +168,16 @@ const About = () => {
                                                                                         rel="noreferrer"
                                                                                 >
                                                                                         Link
-                                                                                        <img src="src/assets/arrow-up.png" alt="arrow" className="w-2.5 h-2.5" />
+                                                                                        <img src={arrowUp} alt="arrow" className="w-2.5 h-2.5" />
                                                                                 </a>
                                                                         </div>
                                                                 </div>
                                                                 <div className="flex justify-between items-center">
                                                                         <button className="arrow-btn" onClick={() => handleNavigation("previous")}>
-                                                                                <img src="src/assets/left-arrow.png" alt="left arrow" />
+                                                                                <img src={leftArrow} alt="left arrow" />
                                                                         </button>
                                                                         <button className="arrow-btn" onClick={() => handleNavigation("next")}>
-                                                                                <img src="src/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+                                                                                <img src={rightArrow} alt="right arrow" className="w-4 h-4" />
                                                                         </button>
                                                                 </div>
                                                         </div>
@@ -271,16 +274,16 @@ const About = () => {
                                                                 rel="noreferrer"
                                                         >
                                                                 Link
-                                                                <img src="src/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                                                                <img src={arrowUp} alt="arrow" className="w-3 h-3" />
                                                         </a>
                                                 </div>
                                         </div>
                                         <div className="relative flex justify-between items-center z-10">
                                                 <button className="arrow-btn" onClick={() => handleNavigation("previous")}>
-                                                        <img src="src/assets/left-arrow.png" alt="left arrow" />
+                                                        <img src={leftArrow} alt="left arrow" />
                                                 </button>
                                                 <button className="arrow-btn" onClick={() => handleNavigation("next")}>
-                                                        <img src="src/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+                                                        <img src={rightArrow} alt="right arrow" className="w-4 h-4" />
                                                 </button>
                                         </div>
                                 </div>

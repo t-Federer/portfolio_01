@@ -3,10 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: "/portfolio_01/",
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
+export default defineConfig(({ command }) => {
+  return {
+    base: command === 'build' ? '/portfolio_01/' : '/',
+    plugins: [
+      react(),
+      tailwindcss()
+    ],
+  }
 })

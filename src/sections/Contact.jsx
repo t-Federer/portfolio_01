@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import arrowUp from '../assets/arrow-up.png';
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -61,7 +62,7 @@ const Contact = () => {
                                                 >
                                                         LinkedIn
                                                         <img 
-                                                                src="src/assets/arrow-up.png" 
+                                                                src={arrowUp} 
                                                                 alt="arrow" 
                                                                 className="w-2.5 h-2.5"
                                                         />
@@ -117,7 +118,7 @@ const Contact = () => {
                                                         <span className="relative z-10 flex items-center gap-3">
                                                                 {loading ? "Sending..." : "Send message"}
                                                                 <img 
-                                                                        src="src/assets/arrow-up.png"
+                                                                        src={arrowUp}
                                                                         alt="arrow-up"
                                                                         className="field-btn_arrow"
                                                                 />
