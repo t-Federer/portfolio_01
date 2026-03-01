@@ -1,6 +1,6 @@
 # Federico Talarico - Portfolio
 
-<img src="./.github/images/porfolio_hero.webp" alt="Porfolio Hero" width="100%" />
+<img src="./.github/images/portfolio_hero.webp" alt="Porfolio Hero" width="100%" />
 
 ---
 
