@@ -51,7 +51,7 @@ const Contact = () => {
         }
 
         return (
-                <section id="contact" className="c-space my-20 scroll-mt-25 sm2:scroll-mt-0 xl2:scroll-mt-0">
+                <section id="contact" className="c-space my-20 scroll-mt-25 sm2:scroll-mt-0 xl2:scroll-mt-25">
                                 <div className="contact-container mx-auto">
                                         <h3 className="head-text">Let{"\u2019"}s get in touch</h3>
                                         <p className="grid-subtext mt-3">

@@ -1,16 +1,89 @@
-# React + Vite
+# Federico Talarico - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./.github/images/porfolio_hero.webp" alt="Porfolio Hero" width="100%" />
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+↗️ **See it live:** [portfolio](https://t-federer.github.io/portfolio_01/) 
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔍 Overview & Purpose
 
-## Expanding the ESLint configuration
+This project is a personal portfolio designed to present my work, background, and technical skills in an engaging and interactive way.<br />
+Built with **React**, **Three.js**, and **TailwindCSS**, it combines a 3D hero scene with a clean, responsive layout. The portfolio includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **3D Hero Scene**: an interactive WebGL scene built with Three.js and React Three Fiber, responding to mouse movement for an immersive feel;
+- **Projects Showcase**: a navigable carousel displaying selected works alongside a live 3D computer model rendering project previews dynamically;
+- **Work Experience & Skills**: a structured overview of my academic path, internships, spoken languages, and publications;
+- **Responsive Design**: adaptive layouts and interactions across mobile, tablet, and desktop breakpoints;
+- **Reusable Architecture**: clean component and section structure supporting maintainability and scalability.
+
+All code in this repository is written from scratch.
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/), a component‑based JavaScript library for building dynamic, modular user interfaces;
+- [TailwindCSS](https://tailwindcss.com/), a utility‑first framework that enables rapid UI development using composable, low‑level classes;
+- [Three.js](https://threejs.org/), a JavaScript 3D library for rendering interactive WebGL scenes, models, and visual effects directly in the browser;
+- [Vite](https://vitejs.dev/), a fast, modern build tool that provides instant dev‑server startup, smooth HMR, and optimized production builds;
+- [Adobe Illustrator](https://www.adobe.com/products/illustrator.html), a professional vector graphics editor (for crafting and refining custom assets).
+
+---
+
+## 📁 Project Structure
+<!-- TREE_START -->
+```
+├─ package.json
+└─ src
+   ├─ App.jsx
+   ├─ components
+   │  ├─ Button.jsx
+   │  ├─ CanvasLoader.jsx
+   │  ├─ Computers.jsx
+   │  ├─ DemoComputer.jsx
+   │  └─ HeroCamera.jsx
+   ├─ constants
+   │  └─ index.js
+   ├─ index.css
+   ├─ main.jsx
+   └─ sections
+      ├─ About.jsx
+      ├─ Contact.jsx
+      ├─ Experience.jsx
+      ├─ Footer.jsx
+      ├─ Hero.jsx
+      ├─ Navbar.jsx
+      └─ Projects.jsx
+```
+<!-- TREE_END -->
+
+---
+
+## 📦 Installation
+
+Ensure you have the following installed on your machine:
+- [Git](https://git-scm.com/);
+- [Node.js](https://nodejs.org/en);
+- [npm](https://www.npmjs.com/) (Node Package Manager).
+
+Then clone the repository: 
+```bash
+git clone https://github.com/t-Federer/portfolio_01.git
+```
+And install the project dependencies:
+```bash
+cd portfolio_01
+npm install
+npm run dev
+```
+Finally, open http://localhost:5173 in your browser to view the project.
+
+---
+
+## ⚖️ License
+
+This project is released under the CC BY‑NC 4.0 License.
+You may view and study the code, but commercial use or redistribution is not permitted.
