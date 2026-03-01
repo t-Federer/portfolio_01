@@ -5,7 +5,7 @@
 ---
 
 <div align="center">
-  <a href="https://t-federer.github.io/portfolio_01/">↗️ <strong>See it live</strong></a>
+  ↗️ <a href="https://t-federer.github.io/portfolio_01/"><strong>See it live</strong></a>
 </div>
 
 ---
