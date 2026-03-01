@@ -4,7 +4,9 @@
 
 ---
 
-↗️ [**See it live**](https://t-federer.github.io/portfolio_01/) 
+<div align="center">
+  <a href="https://t-federer.github.io/portfolio_01/">↗️ <strong>See it live</strong></a>
+</div>
 
 ---
 
@@ -85,5 +87,5 @@ Finally, open http://localhost:5173 in your browser to view the project.
 
 ## ⚖️ License
 
-This project is released under the CC BY‑NC 4.0 License.
+This project is released under the CC BY‑NC 4.0 License.<br />
 You may view and study the code, but commercial use or redistribution is not permitted.
