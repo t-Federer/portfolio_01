@@ -4,7 +4,7 @@
 
 ---
 
-↗️ **See it live:** [portfolio](https://t-federer.github.io/portfolio_01/) 
+↗️ [**See it live**](https://t-federer.github.io/portfolio_01/) 
 
 ---
 
