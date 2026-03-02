@@ -14,6 +14,8 @@ import blenderIcon from '../assets/blender.svg';
 import hmrLogo from '../assets/hmr6bitadder.png';
 import macbookLogo from '../assets/macbookClone.svg';
 import hangmanLogo from '../assets/hangman.svg';
+import dogpitLogo from '../assets/dogpit.svg';
+import dogpitPdf from '../assets/dogpitPP.pdf';
 import unipiIcon from '../assets/unipi_white.svg';
 
 const base = import.meta.env.BASE_URL;
@@ -184,6 +186,20 @@ export const myProjects = [
                         border: '0.2px solid #1C1C21',
                 },
                 tags: ["Unreal", "Blender", "PhotoShop"],
+        },
+        {
+                title: "DogPit - Savings App (concept)", 
+                desc: 'What makes a brand identity memorable without being overbearing? DogPit is one answer.',
+                subdesc: 'A fictional savings app used as a case study: logo, mascot, wordplay and marketing collateral, ready to launch if it ever existed. From the original spark to the final assets.',
+                codeHref: '',
+                linkHref: dogpitPdf,
+                texture: `${base}textures/project/project3.mp4`,
+                logo: dogpitLogo,
+                logoStyle: {
+                        backgroundColor: '#13202F',
+                        border: '0.2px solid #17293E',
+                },
+                tags: ["Illustrator", "PhotoShop"],
         },
         // {
         //         title: "Google Drive (clone)", 
