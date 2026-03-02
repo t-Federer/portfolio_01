@@ -189,8 +189,8 @@ export const myProjects = [
         },
         {
                 title: "DogPit - Savings App (concept)", 
-                desc: 'What makes a brand identity memorable without being overbearing? DogPit is one answer.',
-                subdesc: 'A fictional savings app used as a case study: logo, mascot, wordplay and marketing collateral, ready to launch if it ever existed. From the original spark to the final assets.',
+                desc: 'What keeps a brand identity memorable yet discreet?',
+                subdesc: 'DogPit, a fictional savings app: logo, mascot and marketing collateral, ready to launch (if it ever existed). From sketch to launch-ready assets.',
                 codeHref: '',
                 linkHref: dogpitPdf,
                 texture: `${base}textures/project/project3.mp4`,
