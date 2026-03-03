@@ -160,6 +160,20 @@ export const techStack = [
 
 export const myProjects = [
         {
+                title: "DogPit - Savings App (concept)", 
+                desc: 'What keeps a brand identity memorable yet discreet?',
+                subdesc: 'DogPit, a fictional savings app: logo, mascot and marketing collateral, ready to launch (if it ever existed). From sketch to launch-ready assets.',
+                codeHref: '',
+                linkHref: dogpitPdf,
+                texture: `${base}textures/project/project3.mp4`,
+                logo: dogpitLogo,
+                logoStyle: {
+                        backgroundColor: '#13202F',
+                        border: '0.2px solid #17293E',
+                },
+                tags: ["Illustrator", "PhotoShop"],
+        },
+        {
                 title: "Macbook Pro - Landing Page (clone)",
                 desc: 'A frontend project that recreates an Apple\u2011style landing page, combining Three.js and GSAP to deliver a clean implementation of interactive 3D elements and smooth animations within a modern UI.',
                 subdesc: '',
@@ -186,20 +200,6 @@ export const myProjects = [
                         border: '0.2px solid #1C1C21',
                 },
                 tags: ["Unreal", "Blender", "PhotoShop"],
-        },
-        {
-                title: "DogPit - Savings App (concept)", 
-                desc: 'What keeps a brand identity memorable yet discreet?',
-                subdesc: 'DogPit, a fictional savings app: logo, mascot and marketing collateral, ready to launch (if it ever existed). From sketch to launch-ready assets.',
-                codeHref: '',
-                linkHref: dogpitPdf,
-                texture: `${base}textures/project/project3.mp4`,
-                logo: dogpitLogo,
-                logoStyle: {
-                        backgroundColor: '#13202F',
-                        border: '0.2px solid #17293E',
-                },
-                tags: ["Illustrator", "PhotoShop"],
         },
         // {
         //         title: "Google Drive (clone)", 
