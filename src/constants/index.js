@@ -160,10 +160,10 @@ export const techStack = [
 
 export const myProjects = [
         {
-                title: "DogPit - Savings App (concept)", 
-                desc: 'What keeps a brand identity memorable yet discreet?',
-                subdesc: 'DogPit, a fictional savings app: logo, mascot and marketing collateral, ready to launch (if it ever existed). From sketch to launch-ready assets.',
-                codeHref: '',
+                title: "DogPit: Fintech UI/UX & Brand Identity (concept)", 
+                desc: 'An end-to-end Figma case study.',
+                subdesc: 'From wireframes to responsive mockups, it features a conversion-optimized landing page, a versatile 4-tier logo system, a mapped palette, and a custom mascot.',
+                codeHref: 'https://www.figma.com/design/6OSSvud3fC0QupEKq5sx1l/DogPit?m=auto&t=OZ1WjuQRakOmMijG-1',
                 linkHref: dogpitPdf,
                 texture: `${base}textures/project/project3.mp4`,
                 logo: dogpitLogo,
@@ -171,7 +171,7 @@ export const myProjects = [
                         backgroundColor: '#13202F',
                         border: '0.2px solid #17293E',
                 },
-                tags: ["Illustrator", "PhotoShop"],
+                tags: ["Figma", "Illustrator", "PhotoShop"],
         },
         {
                 title: "Macbook Pro - Landing Page (clone)",
