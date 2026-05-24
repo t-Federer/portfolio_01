@@ -160,7 +160,7 @@ export const techStack = [
 
 export const myProjects = [
         {
-                title: "DogPit: Fintech UI/UX & Brand Identity (concept)", 
+                title: "DogPit - Fintech UI/UX & Brand Identity (concept)", 
                 desc: 'An end-to-end Figma case study.',
                 subdesc: 'From wireframes to responsive mockups, it features a conversion-optimized landing page, a versatile 4-tier logo system, a mapped palette, and a custom mascot.',
                 codeHref: 'https://www.figma.com/design/6OSSvud3fC0QupEKq5sx1l/DogPit?m=auto&t=OZ1WjuQRakOmMijG-1',
