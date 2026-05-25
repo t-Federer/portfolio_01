@@ -13,7 +13,7 @@ import ueIcon from '../assets/ue_white.svg';
 import blenderIcon from '../assets/blender.svg';
 import hmrLogo from '../assets/hmr6bitadder.png';
 import macbookLogo from '../assets/macbookClone.svg';
-import hangmanLogo from '../assets/hangman.svg';
+// import hangmanLogo from '../assets/hangman.svg';
 import dogpitLogo from '../assets/dogpit.svg';
 import dogpitPdf from '../assets/dogpitPP.pdf';
 import unipiIcon from '../assets/unipi_white.svg';
@@ -215,20 +215,20 @@ export const myProjects = [
         //         },
         //         tags: ["Git", "React", "Tailwind"],
         // },
-        {
-                title: 'Hangman',
-                desc: 'A simple React\u2011based hangman minigame that uses state and conditional rendering to manage progress, lives, and word reveal.',
-                subdesc: 'The interface updates smoothly as each guess modifies the game state.',
-                codeHref: 'https://github.com/t-Federer/react_04_hangman',
-                linkHref: 'https://t-federer.github.io/react_04_hangman/',
-                texture: `${base}textures/project/project4.mp4`,
-                logo: hangmanLogo,
-                logoStyle: {
-                        backgroundColor: '#2A1816',
-                        border: '0.2px solid #36201D',
-                },
-                tags: ["Git", "React"],
-        },
+        // {
+        //         title: 'Hangman',
+        //         desc: 'A simple React\u2011based hangman minigame that uses state and conditional rendering to manage progress, lives, and word reveal.',
+        //         subdesc: 'The interface updates smoothly as each guess modifies the game state.',
+        //         codeHref: 'https://github.com/t-Federer/react_04_hangman',
+        //         linkHref: 'https://t-federer.github.io/react_04_hangman/',
+        //         texture: `${base}textures/project/project4.mp4`,
+        //         logo: hangmanLogo,
+        //         logoStyle: {
+        //                 backgroundColor: '#2A1816',
+        //                 border: '0.2px solid #36201D',
+        //         },
+        //         tags: ["Git", "React"],
+        // },
 ];
 
 export const workExperiences = [
