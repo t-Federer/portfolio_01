@@ -67,21 +67,21 @@ export const techStack = [
                 },
         },
         {
+                path: figmaIcon,
+                label: "Figma",
+                logoSize: { 
+                        mobile: "w-5 h-5", 
+                        tablet: "w-5 h-5", 
+                        desktop: "w-7 h-7" 
+                },
+        },
+        {
                 path: reactIcon,
                 label: "React",
                 logoSize: { 
                         mobile: "w-4 h-4", 
                         tablet: "w-4 h-4", 
                         desktop: "w-6 h-6" 
-                },
-        },
-        {
-                path: threejsIcon,
-                label: "Three.js",
-                logoSize: { 
-                        mobile: "w-3.5 h-3.5", 
-                        tablet: "w-3.5 h-3.5", 
-                        desktop: "w-5.5 h-5.5" 
                 },
         },
         {
@@ -130,12 +130,12 @@ export const techStack = [
                 },
         },
         {
-                path: figmaIcon,
-                label: "Figma",
+                path: threejsIcon,
+                label: "Three.js",
                 logoSize: { 
-                        mobile: "w-5 h-5", 
-                        tablet: "w-5 h-5", 
-                        desktop: "w-7 h-7" 
+                        mobile: "w-3.5 h-3.5", 
+                        tablet: "w-3.5 h-3.5", 
+                        desktop: "w-5.5 h-5.5" 
                 },
         },
         {
